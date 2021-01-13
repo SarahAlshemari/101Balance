@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+
+label{
+    font-style: 'Poppins', sans-serif;;
+    font-size: x-large;
+    font-weight: 400;
+    color: #069C54;;
+
+
+}
+
+.style{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    
+
+}
+    </style>
+</head>
+<body>
+
+    <div class="style"> 
+        <!-- Email -->
+        <label> Email: </label>
+        <input type="text" id="email">
+        <br></br>
+
+        <!-- Request -->
+        <label> Your request: </label>
+        <input type="text" id="request">
+        <br></br>
+       <a href="./index.html" class="button">Submit</a>
+    
+    </div>
+    
+    
+    
+        <script>
+            function Submit(){
+                let email=document.getElementById("email").value;
+                let request=document.getElementById("request")
+    
+                window.open(`mailto:test@example.com`);
+                window.open(`mailto:${email}@example.com?subject=subject&body=${request}`);
+   
+               
+            }
+    
+    
+    
+        </script>
+
+        <script src="js.js"></script>
+</body>
+</html>
